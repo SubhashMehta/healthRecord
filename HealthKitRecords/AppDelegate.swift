@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  HealthData_Demo
+//  HealthKitRecords
 //
-//  Created by Shubash Kumar on 11/2/18.
+//  Created by Shubash Kumar on 11/6/18.
 //  Copyright © 2018 Shubash Kumar. All rights reserved.
 //
 

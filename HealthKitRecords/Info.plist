@@ -24,12 +24,12 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
-	<string>This is the description that will be shown to the user when asking for access</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>This is the description that will be shown to the user when asking for access</string>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>This is the description that will be shown to the user when asking for access</string>
+    <key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+    <string>This is the description that will be shown to the user when asking for access</string>
+    <key>NSHealthShareUsageDescription</key>
+    <string>This is the description that will be shown to the user when asking for access</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>This is the description that will be shown to the user when asking for access</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -37,6 +37,8 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

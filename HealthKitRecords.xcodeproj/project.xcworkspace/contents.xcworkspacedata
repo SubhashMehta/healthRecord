@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/shubashkumar/Desktop/healthRecord/HealthKitRecord.xcodeproj">
+      location = "self:HealthKitRecords.xcodeproj">
    </FileRef>
 </Workspace>

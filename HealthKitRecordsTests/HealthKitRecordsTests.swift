@@ -1,15 +1,15 @@
 //
-//  HealthData_DemoTests.swift
-//  HealthData_DemoTests
+//  HealthKitRecordsTests.swift
+//  HealthKitRecordsTests
 //
-//  Created by Shubash Kumar on 11/2/18.
+//  Created by Shubash Kumar on 11/6/18.
 //  Copyright © 2018 Shubash Kumar. All rights reserved.
 //
 
 import XCTest
-@testable import HealthData_Demo
+@testable import HealthKitRecords
 
-class HealthData_DemoTests: XCTestCase {
+class HealthKitRecordsTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
