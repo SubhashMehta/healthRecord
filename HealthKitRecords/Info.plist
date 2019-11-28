@@ -20,16 +20,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>This is the description that will be shown to the user when asking for access</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>This is the description that will be shown to the user when asking for access</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>This is the description that will be shown to the user when asking for access</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-    <key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
-    <string>This is the description that will be shown to the user when asking for access</string>
-    <key>NSHealthShareUsageDescription</key>
-    <string>This is the description that will be shown to the user when asking for access</string>
-    <key>NSHealthUpdateUsageDescription</key>
-    <string>This is the description that will be shown to the user when asking for access</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

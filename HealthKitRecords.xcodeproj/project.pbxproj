@@ -15,6 +15,7 @@
 		8A5402E32191760F00A76637 /* HealthKitRecordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5402E22191760F00A76637 /* HealthKitRecordsTests.swift */; };
 		8A5402EE2191760F00A76637 /* HealthKitRecordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5402ED2191760F00A76637 /* HealthKitRecordsUITests.swift */; };
 		8A5402FD2191766300A76637 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5402FC2191766300A76637 /* HealthKit.framework */; };
+		BF71D3EB238FCC90006809D4 /* HealthKitInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71D3EA238FCC8F006809D4 /* HealthKitInstance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		8A5402EF2191760F00A76637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A5402FC2191766300A76637 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		8A5402FE2191766300A76637 /* HealthKitRecords.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthKitRecords.entitlements; sourceTree = "<group>"; };
+		BF71D3EA238FCC8F006809D4 /* HealthKitInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitInstance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				8A5402FE2191766300A76637 /* HealthKitRecords.entitlements */,
 				8A5402CD2191760A00A76637 /* AppDelegate.swift */,
+				BF71D3EA238FCC8F006809D4 /* HealthKitInstance.swift */,
 				8A5402CF2191760A00A76637 /* ViewController.swift */,
 				8A5402D12191760A00A76637 /* Main.storyboard */,
 				8A5402D42191760F00A76637 /* Assets.xcassets */,
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF71D3EB238FCC90006809D4 /* HealthKitInstance.swift in Sources */,
 				8A5402D02191760A00A76637 /* ViewController.swift in Sources */,
 				8A5402CE2191760A00A76637 /* AppDelegate.swift in Sources */,
 			);
@@ -460,7 +464,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.smartdata.demo.HealthKitRecords;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdata.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,7 +484,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.smartdata.demo.HealthKitRecords;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdata.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

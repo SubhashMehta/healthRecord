@@ -9,22 +9,30 @@
 import UIKit
 import HealthKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,HealthKitInstanceMethodsProtocol {
     let healthStore = HKHealthStore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.authoriseHealthKitAccess()
+       // self.authoriseHealthKitAccess()
+        HealthKitInstance.shared.delegate = self
     }
     
     func authoriseHealthKitAccess()  {
+//        let healthKitTypes: Set<HKObjectType> = [
+//            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate)!,
+//            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!,
+//            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!,
+//            
+//            ]
+        
         let healthKitTypes: Set<HKObjectType> = [
-            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate)!,
             HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!,
-            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!,
-            
-            ]
+            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!,HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMass)!, HKObjectType.characteristicType(forIdentifier: HKCharacteristicTypeIdentifier.biologicalSex)!
+        ]
+        
+        
         
         healthStore.requestAuthorization(toShare: nil, read: healthKitTypes ) { (bool, error) in
             if let e = error{
@@ -76,7 +84,7 @@ class ViewController: UIViewController {
         healthStore.execute(query)
     }
     
-    
+    /*
     func getWalkingDistance(completion: @escaping (Double) -> Void) {
         let now = Date()
         let startDate = Calendar.current.date(byAdding: .day, value: -3, to: now)!
@@ -124,10 +132,13 @@ class ViewController: UIViewController {
         healthStore.execute(query)
     }
     
-   
+   */
     
    
     @IBAction func actionForGetData(_ sender: Any) {
+        
+        
+        
 //        //Get Walking Distance
 //        self.getWalkingDistance { (result) in
 //                   // print("\(result)")
@@ -137,7 +148,16 @@ class ViewController: UIViewController {
 //                    }
 //                }
         //Get Steps Count:--
-        self.getStepsCounts()
+        //Pass value according to which value you want to fetch:--
+        //Steps = "Steps"
+        //Walking Distance = "Walking"
+        //Gender = "Gender"
+        //Weight = "Weight"
+        
+        HealthKitInstance.shared.authoriseHealthKitAccess(value: "Steps")
+    }
+    func saveHealthDataSuccessfully(dict: Dictionary<String, Any>) {
+        print(dict)
     }
 }
 
